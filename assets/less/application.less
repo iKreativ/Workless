@@ -1,0 +1,885 @@
+/**
+ * All APP specific CSS goes in here.
+ *
+ * @Version:
+ * @Author:
+ * @URL:
+ */
+
+
+
+
+/**
+ * We set base colors here as they are
+ * application specific
+ */
+ *
+ {
+ 	color: #686873;
+ }
+
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6
+ {
+ 	color: #555555;
+ }
+
+ a
+ {
+ 	color: #2daebf;
+ }
+
+a:hover
+{
+	color: #666666;
+}
+
+a:active
+{
+	color: #000000;
+}
+
+
+
+/**
+ * Background image
+ */
+.bg_shadow
+{
+	background: url(../img/shadow.png) no-repeat;
+	background-position: bottom;
+}
+
+
+
+/**
+ * Main
+ */
+#main
+{
+	background: #ffffff;
+	min-height: 100%;
+	padding: 50px;
+	margin: 25px auto;
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+	border-radius: 5px;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	float: left;
+}
+
+
+
+/**
+ * Logo
+ */
+#logo
+{
+	font-weight: 200;
+	font-size: 24px;
+	float: left;
+	margin-top: -8px;
+	margin-bottom: 8px;
+}
+
+#logo a
+{
+	filter: alpha(opacity=100);
+  	-khtml-opacity: 1;
+  	-moz-opacity: 1;
+  	opacity: 1;
+  	-webkit-transition: 250ms linear all; 
+	-moz-transition: 250ms linear all; 
+	transition: 250ms linear all; 
+}
+
+#logo a:hover
+{
+	filter: alpha(opacity=80);
+  	-khtml-opacity: 0.8;
+  	-moz-opacity: 0.8;
+  	opacity: 0.8;
+}
+
+#logo small
+{
+	width: 150px;
+	color: #7F7F8A;
+	font-weight: 200;
+	display: block;
+	float: right;
+	margin-top: 6px;
+}
+
+@media (-webkit-min-device-pixel-ratio:0)
+{ 
+	#logo small
+	{
+		margin-top: -35px;
+	}
+}
+
+
+
+
+/**
+ * Nav
+ */
+nav#primary
+{
+	width: 100%;
+	padding-bottom: 25px;
+}
+
+nav#primary ul,
+nav#primary .selector
+{
+	float: right;
+}
+
+nav#primary ul li
+{
+	margin-left: 15px;
+	display: inline;
+}
+
+nav#primary ul li.current a
+{
+	color: #333333;
+}
+
+nav#primary ul li a
+{
+	color: #7F7F8A;
+	font-size: 16px;
+	font-weight: 200;
+}
+
+nav#primary ul li a:hover
+{
+	color: #2daebf;
+}
+/* @end Nav */
+
+
+
+/**
+ * Header
+ */
+header
+{
+	border-bottom: 1px solid #eeeeee;
+	padding: 75px 0 50px 0;
+	margin-bottom: 25px;
+}
+
+header h1
+{
+	font-weight: 200!important;
+	text-align: center;
+	font-weight: normal;
+}
+/* @end Header */
+
+
+
+/**
+ * Get
+ */
+#getit
+{
+	width: 400px;
+	margin: 0 auto;
+	padding-top: 10px;
+	text-align: center;
+}
+
+#getit h3
+{
+	color: #7F7F8A;
+}
+
+#getit p
+{
+	font-size: 12px;
+}
+
+
+
+/**
+ * Footer
+ */
+footer
+{	
+	margin-top: 35px!important;
+	text-align: center;
+}
+/* @end Header */
+
+
+
+/**
+ * Responsive @media queries for responsive design.
+ * Ensure this is included after all your other CSS.
+ * 
+ * The first section below is the basic mobile first
+ * CSS as the above CSS is just styling.
+ *
+ * Obviously media queries are specific to each 
+ * application and these may need altering for your
+ * own project.
+ */
+h1
+{
+	font-size: 2em;
+}
+
+h2
+{
+	font-size: 1.5em;
+}
+
+h3
+{
+	font-size: 1.2em;
+}
+
+h4
+{
+	font-size: 1.25em;
+}
+
+h5
+{
+	font-size: 1em;
+}
+
+h6
+{
+	font-size: 0.875em;
+}
+
+p,
+li,
+dl dd
+{
+	font-size: 14px;
+}
+
+code,
+footer p
+{
+	font-size: 12px;
+}
+
+nav#primary .selector
+{
+	display: inherit;
+}
+
+nav#primary ul 
+{ 
+	display: none; 
+}
+
+#logo
+	{
+		width: 50px;
+	}
+
+#logo > small
+{
+	display: none;
+}
+
+.boxed
+{
+	width: 380px;
+}
+
+.one_full,
+.one_half,
+.one_third,
+.two_third,
+.one_quarter
+{
+	margin-right: 0px; 
+	width: 280px;
+}
+
+/** 
+ * iPhone landscape 
+ */
+@media (min-width: 480px) {
+	h1
+	{
+		font-size: 2em;
+	}
+
+	h2
+	{
+		font-size: 1.5em;
+	}
+
+	h3
+	{
+		font-size: 1.2em;
+	}
+
+	h4
+	{
+		font-size: 1.25em;
+	}
+
+	h5
+	{
+		font-size: 1em;
+	}
+
+	h6
+	{
+		font-size: 0.875em;
+	}
+
+	p,
+	li,
+	dl dd
+	{
+		font-size: 14px;
+	}
+
+	code,
+	footer p
+	{
+		font-size: 12px;
+	}
+
+	nav#primary .selector
+	{
+		display: inherit;
+	}
+	
+	nav#primary ul 
+	{ 
+		display: none; 
+	}
+
+	#logo
+	{
+		width: 50px;
+	}
+
+	#logo > small
+	{
+		display: none;
+	}
+
+	.boxed
+	{
+		width: 480px;
+	}
+
+	.one_full,
+	.one_half,
+	.one_third,
+	.two_third,
+	.one_quarter
+	{
+		margin-right: 0px; 
+		width: 380px;
+	}
+}
+
+/** 
+ * Small tablet portrait 
+ */
+@media (min-width: 640px) {
+	h1
+	{
+		font-size: 2.2em;
+	}
+
+	h2
+	{
+		font-size: 1.8em;
+	}
+
+	h3
+	{
+		font-size: 1.5em;
+	}
+
+	h4
+	{
+		font-size: 1.25em;
+	}
+
+	h5
+	{
+		font-size: 1em;
+	}
+
+	h6
+	{
+		font-size: 0.875em;
+	}
+
+	p,
+	li,
+	dl dd
+	{
+		font-size: 16px;
+	}
+
+	code,
+	footer p
+	{
+		font-size: 14px;
+	}
+
+	nav#primary .selector
+	{
+		display: inherit;
+	}
+	
+	nav#primary ul 
+	{ 
+		display: none; 
+	}
+
+	#logo
+	{
+		width: 50px;
+	}
+
+	#logo > small
+	{
+		display: none;
+	}
+
+	.boxed
+	{
+		width: 640px;
+	}
+
+	.one_full,
+	.one_half,
+	.one_third,
+	.two_third,
+	.one_quarter
+	{
+		margin-right: 0px; 	
+		width: 540px;
+	}
+}
+
+/** 
+ * iPad portrait 
+ */
+@media (min-width: 768px) {
+	h1
+	{
+		font-size: 2.2em;
+	}
+
+	h2
+	{
+		font-size: 1.8em;
+	}
+
+	h3
+	{
+		font-size: 1.5em;
+	}
+
+	h4
+	{
+		font-size: 1.25em;
+	}
+
+	h5
+	{
+		font-size: 1em;
+	}
+
+	h6
+	{
+		font-size: 0.875em;
+	}
+
+	p,
+	li,
+	dl dd
+	{
+		font-size: 16px;
+	}
+
+	code,
+	footer p
+	{
+		font-size: 14px;
+	}
+
+	nav#primary .selector
+	{
+		display: none;
+	}
+	
+	nav#primary ul 
+	{ 
+		display: inherit; 
+	}
+
+	#logo
+	{
+		width: 50px;
+	}
+	
+	#logo > small
+	{
+		display: none;
+	}
+
+	.boxed
+	{
+		width: 768px;
+	}
+
+	.one_full
+	{
+		width: 618px;
+	}
+
+	.one_half
+	{
+		width: 280px;
+		margin-right: 50px; 
+	}
+
+	.one_third
+	{
+		width: 170px;
+		margin-right: 50px; 
+	}
+
+	.two_third
+	{
+		width: 390px;
+		margin-right: 50px; 
+	}
+
+	.one_quarter
+	{
+		width: 110px;
+		margin-right: 50px; 
+	}
+}
+
+/**
+ * Small browser / iPad landscape 
+ */
+@media (min-width: 1024px) {
+	h1
+	{
+		font-size: 2.4em;
+	}
+
+	h2
+	{
+		font-size: 1.8em;
+	}
+
+	h3
+	{
+		font-size: 1.5em;
+	}
+
+	h4
+	{
+		font-size: 1.25em;
+	}
+
+	h5
+	{
+		font-size: 1em;
+	}
+
+	h6
+	{
+		font-size: 0.875em;
+	}
+
+	p,
+	li,
+	dl dd
+	{
+		font-size: 16px;
+	}
+
+	code,
+	footer p
+	{
+		font-size: 14px;
+	}
+
+	nav#primary .selector
+	{
+		display: none;
+	}
+	
+	nav#primary ul 
+	{ 
+		display: inherit; 
+	}
+
+	#logo
+	{
+		width: 200px;
+	}
+
+	#logo > small
+	{
+		display: inline;
+	}
+
+	.boxed
+	{
+		width: 1024px;
+	}
+
+	.one_full
+	{
+		width: 874px;
+	}
+
+	.one_half
+	{
+		width: 410px;
+		margin-right: 50px; 
+	}
+
+	.one_third
+	{
+		width: 250px;
+		margin-right: 50px; 
+	}
+
+	.two_third
+	{
+		width: 550px;
+		margin-right: 50px; 
+	}
+
+	.one_quarter
+	{
+		width: 180px;
+		margin-right: 50px; 
+	}
+}
+
+/** 
+ * Generic browser 
+ */
+@media (min-width: 1280px) {
+	h1
+	{
+		font-size: 2.5em;
+	}
+
+	h2
+	{
+		font-size: 1.8em;
+	}
+
+	h3
+	{
+		font-size: 1.5em;
+	}
+
+	h4
+	{
+		font-size: 1.25em;
+	}
+
+	h5
+	{
+		font-size: 1em;
+	}
+
+	h6
+	{
+		font-size: 0.875em;
+	}
+
+	p,
+	li,
+	dl dd
+	{
+		font-size: 16px;
+	}
+
+	code,
+	footer p
+	{
+		font-size: 14px;
+	}
+
+	nav#primary .selector
+	{
+		display: none;
+	}
+	
+	nav#primary ul 
+	{ 
+		display: inherit; 
+	}
+
+	#logo
+	{
+		width: 200px;
+	}
+	
+	#logo > small
+	{
+		display: inline;
+	}
+
+	.boxed
+	{
+		width: 1180px;
+	}
+
+	.one_full
+	{
+		width: 1030px;
+	}
+
+	.one_half
+	{
+		width: 480px;
+		margin-right: 50px; 
+	}
+
+	.one_third
+	{
+		width: 300px;
+		margin-right: 50px; 
+	}
+
+	.two_third
+	{
+		width: 650px;
+		margin-right: 50px; 
+	}
+
+	.one_quarter
+	{
+		width: 210px;
+		margin-right: 50px; 
+	}
+}
+
+/** 
+ * Large browser 
+ */
+@media (min-width: 1600px) {
+	h1
+	{
+		font-size: 2.5em;
+	}
+
+	h2
+	{
+		font-size: 1.8em;
+	}
+
+	h3
+	{
+		font-size: 1.5em;
+	}
+
+	h4
+	{
+		font-size: 1.25em;
+	}
+
+	h5
+	{
+		font-size: 1em;
+	}
+
+	h6
+	{
+		font-size: 0.875em;
+	}
+
+	p,
+	li,
+	dl dd
+	{
+		font-size: 16px;
+	}
+
+	code,
+	footer p
+	{
+		font-size: 14px;
+	}
+
+	nav#primary .selector
+	{
+		display: none;
+	}
+	
+	nav#primary ul,
+	{ 
+		display: inherit; 
+	}
+
+	#logo
+	{
+		width: 200px;
+	}
+
+	#logo > small
+	{
+		display: inline;
+	}
+	
+	.boxed
+	{
+		width: 1280px;
+	}
+
+	.one_full
+	{
+		width: 1130px;
+	}
+
+	.one_half
+	{
+		width: 530px;
+		margin-right: 50px; 
+	}
+
+	.one_third
+	{
+		width: 340px;
+		margin-right: 50px; 
+	}
+
+	.two_third
+	{
+		width: 730px;
+		margin-right: 50px; 
+	}
+
+	.one_quarter
+	{
+		width: 240px;
+		margin-right: 50px; 
+	}
+}
