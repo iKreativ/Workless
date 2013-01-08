@@ -91,9 +91,9 @@ a:active
   	-khtml-opacity: 1;
   	-moz-opacity: 1;
   	opacity: 1;
-  	-webkit-transition: 250ms linear all; 
-	-moz-transition: 250ms linear all; 
-	transition: 250ms linear all; 
+  	-webkit-transition: 250ms linear all;
+	-moz-transition: 250ms linear all;
+	transition: 250ms linear all;
 }
 
 #logo a:hover
@@ -115,14 +115,13 @@ a:active
 }
 
 @media (-webkit-min-device-pixel-ratio:0)
-{ 
+{
 	#logo small
 	{
 		margin-top: -35px;
 	}
 }
-
-
+/* @end Logo */
 
 
 /**
@@ -207,13 +206,18 @@ header h1
 	font-size: 12px;
 }
 
+#getit i
+{
+	color: #ffffff!important;
+}
+/* @end Get */
 
 
 /**
  * Footer
  */
 footer
-{	
+{
 	margin-top: 35px!important;
 	text-align: center;
 }
@@ -224,11 +228,11 @@ footer
 /**
  * Responsive @media queries for responsive design.
  * Ensure this is included after all your other CSS.
- * 
+ *
  * The first section below is the basic mobile first
  * CSS as the above CSS is just styling.
  *
- * Obviously media queries are specific to each 
+ * Obviously media queries are specific to each
  * application and these may need altering for your
  * own project.
  */
@@ -280,9 +284,9 @@ nav#primary .selector
 	display: inherit;
 }
 
-nav#primary ul 
-{ 
-	display: none; 
+nav#primary ul
+{
+	display: none;
 }
 
 #logo
@@ -306,12 +310,12 @@ nav#primary ul
 .two_third,
 .one_quarter
 {
-	margin-right: 0px; 
+	margin-right: 0px;
 	width: 280px;
 }
 
-/** 
- * iPhone landscape 
+/**
+ * iPhone landscape
  */
 @media (min-width: 480px) {
 	h1
@@ -361,10 +365,10 @@ nav#primary ul
 	{
 		display: inherit;
 	}
-	
-	nav#primary ul 
-	{ 
-		display: none; 
+
+	nav#primary ul
+	{
+		display: none;
 	}
 
 	#logo
@@ -388,13 +392,13 @@ nav#primary ul
 	.two_third,
 	.one_quarter
 	{
-		margin-right: 0px; 
+		margin-right: 0px;
 		width: 380px;
 	}
 }
 
-/** 
- * Small tablet portrait 
+/**
+ * Small tablet portrait
  */
 @media (min-width: 640px) {
 	h1
@@ -444,10 +448,10 @@ nav#primary ul
 	{
 		display: inherit;
 	}
-	
-	nav#primary ul 
-	{ 
-		display: none; 
+
+	nav#primary ul
+	{
+		display: none;
 	}
 
 	#logo
@@ -471,13 +475,13 @@ nav#primary ul
 	.two_third,
 	.one_quarter
 	{
-		margin-right: 0px; 	
+		margin-right: 0px;
 		width: 540px;
 	}
 }
 
-/** 
- * iPad portrait 
+/**
+ * iPad portrait
  */
 @media (min-width: 768px) {
 	h1
@@ -527,17 +531,17 @@ nav#primary ul
 	{
 		display: none;
 	}
-	
-	nav#primary ul 
-	{ 
-		display: inherit; 
+
+	nav#primary ul
+	{
+		display: inherit;
 	}
 
 	#logo
 	{
 		width: 50px;
 	}
-	
+
 	#logo > small
 	{
 		display: none;
@@ -556,30 +560,30 @@ nav#primary ul
 	.one_half
 	{
 		width: 280px;
-		margin-right: 50px; 
+		margin-right: 50px;
 	}
 
 	.one_third
 	{
 		width: 170px;
-		margin-right: 50px; 
+		margin-right: 50px;
 	}
 
 	.two_third
 	{
 		width: 390px;
-		margin-right: 50px; 
+		margin-right: 50px;
 	}
 
 	.one_quarter
 	{
 		width: 110px;
-		margin-right: 50px; 
+		margin-right: 50px;
 	}
 }
 
 /**
- * Small browser / iPad landscape 
+ * Small browser / iPad landscape
  */
 @media (min-width: 1024px) {
 	h1
@@ -629,10 +633,10 @@ nav#primary ul
 	{
 		display: none;
 	}
-	
-	nav#primary ul 
-	{ 
-		display: inherit; 
+
+	nav#primary ul
+	{
+		display: inherit;
 	}
 
 	#logo
@@ -658,30 +662,30 @@ nav#primary ul
 	.one_half
 	{
 		width: 410px;
-		margin-right: 50px; 
+		margin-right: 50px;
 	}
 
 	.one_third
 	{
 		width: 250px;
-		margin-right: 50px; 
+		margin-right: 50px;
 	}
 
 	.two_third
 	{
 		width: 550px;
-		margin-right: 50px; 
+		margin-right: 50px;
 	}
 
 	.one_quarter
 	{
 		width: 180px;
-		margin-right: 50px; 
+		margin-right: 50px;
 	}
 }
 
-/** 
- * Generic browser 
+/**
+ * Generic browser
  */
 @media (min-width: 1280px) {
 	h1
@@ -731,17 +735,17 @@ nav#primary ul
 	{
 		display: none;
 	}
-	
-	nav#primary ul 
-	{ 
-		display: inherit; 
+
+	nav#primary ul
+	{
+		display: inherit;
 	}
 
 	#logo
 	{
 		width: 200px;
 	}
-	
+
 	#logo > small
 	{
 		display: inline;
@@ -760,30 +764,30 @@ nav#primary ul
 	.one_half
 	{
 		width: 480px;
-		margin-right: 50px; 
+		margin-right: 50px;
 	}
 
 	.one_third
 	{
 		width: 300px;
-		margin-right: 50px; 
+		margin-right: 50px;
 	}
 
 	.two_third
 	{
 		width: 650px;
-		margin-right: 50px; 
+		margin-right: 50px;
 	}
 
 	.one_quarter
 	{
 		width: 210px;
-		margin-right: 50px; 
+		margin-right: 50px;
 	}
 }
 
-/** 
- * Large browser 
+/**
+ * Large browser
  */
 @media (min-width: 1600px) {
 	h1
@@ -833,10 +837,10 @@ nav#primary ul
 	{
 		display: none;
 	}
-	
+
 	nav#primary ul,
-	{ 
-		display: inherit; 
+	{
+		display: inherit;
 	}
 
 	#logo
@@ -848,7 +852,7 @@ nav#primary ul
 	{
 		display: inline;
 	}
-	
+
 	.boxed
 	{
 		width: 1280px;
@@ -862,24 +866,24 @@ nav#primary ul
 	.one_half
 	{
 		width: 530px;
-		margin-right: 50px; 
+		margin-right: 50px;
 	}
 
 	.one_third
 	{
 		width: 340px;
-		margin-right: 50px; 
+		margin-right: 50px;
 	}
 
 	.two_third
 	{
 		width: 730px;
-		margin-right: 50px; 
+		margin-right: 50px;
 	}
 
 	.one_quarter
 	{
 		width: 240px;
-		margin-right: 50px; 
+		margin-right: 50px;
 	}
 }
