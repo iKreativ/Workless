@@ -10,7 +10,7 @@
 @total_width: @all_columns + @all_gutters;
 
 
-.columns (@column: 1) {
+.grid_columns (@column: 1) {
 	width: (@column_width * @column) + (@gutter_width * ((@column * 2) - 2));
 	margin: 0 @gutter_width;
     overflow: hidden;
@@ -29,11 +29,11 @@ You can easily redefine the column widths above inside media queries to generate
 	overflow: hidden;
 }
 
-.one_full { .columns(12); }
-.one_half { .columns(6); }
-.one_third { .columns(4); }
-.one_quarter { .columns(3); }
+.one_full { .grid_columns(12); }
+.one_half { .grid_columns(6); }
+.one_third { .grid_columns(4); }
+.one_quarter { .grid_columns(3); }
 
-.two_thirds { .columns(8); }
-.three_quarters { .columns(9); }
+.two_thirds { .grid_columns(8); }
+.three_quarters { .grid_columns(9); }
 */
