@@ -13,7 +13,7 @@
 @all_gutters: (@gutter_width * @grid_columns) * 2;
 @total_width: @all_columns + @all_gutters;
 
-.grid_columns (@column: 1)
+.grid_columns (@column: 1, @column_width: @column_width, @gutter_width: @gutter_width)
 {
     width: (@column_width * @column) + (@gutter_width * ((@column * 2) - 2));
     margin: 0 @gutter_width;
