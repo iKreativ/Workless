@@ -63,6 +63,7 @@ textarea
 	margin: 10px 0!important; 
 	vertical-align: baseline; 
 	*vertical-align: middle;
+	-ms-touch-action: auto;
 }
 
 button,
@@ -113,6 +114,8 @@ textarea
 	background: #dddfe5;
 	padding: 10px;
 	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
 	border: none;
 }
 
@@ -122,8 +125,12 @@ select
 	color: #5A6C7F;
 	background: #dddfe5;
 	padding: 9px 10px;
-	border-radius: 2px;
 	border: none;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-ms-touch-action: pan-x;
+	
 }
 
 input[type="file"] 
@@ -131,6 +138,8 @@ input[type="file"]
 	padding: 5px;
 	border: 1px solid rgba(0, 0, 0, 0.2);
 	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
 }
 
 textarea 
